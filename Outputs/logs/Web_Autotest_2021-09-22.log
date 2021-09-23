@@ -772,3 +772,361 @@
 2021-09-22 20:13:56,633 INFO logger.py setMSG [line:38 ] wait 0.015532970428466797 until the element ('link text', 'Go to second page.') is visible
 2021-09-22 20:13:57,609 INFO logger.py setMSG [line:38 ] succeed to click the element: ('link text', 'Go to second page.')
 2021-09-22 20:13:57,646 INFO logger.py setMSG [line:38 ] wait 0.01562666893005371 until the element ('id', 'header') is visible
+2021-09-22 21:23:47,386 INFO logger.py setMSG [line:38 ] wait 0.008795976638793945 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:47,402 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:47,752 INFO logger.py setMSG [line:38 ] wait 0.013963937759399414 until the element ('id', 'userName') is visible
+2021-09-22 21:23:47,767 INFO logger.py setMSG [line:38 ] wait 0.015630483627319336 until the element ('id', 'userName') is visible
+2021-09-22 21:23:47,925 INFO logger.py setMSG [line:38 ] succeed to input asdf123 into the element: ('id', 'userName')
+2021-09-22 21:23:47,941 INFO logger.py setMSG [line:38 ] wait 0.015624523162841797 until the element ('id', 'loginButton') is visible
+2021-09-22 21:23:48,012 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:23:48,020 INFO logger.py setMSG [line:38 ] wait 0.007987022399902344 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:48,035 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:48,375 INFO logger.py setMSG [line:38 ] wait 0.012340784072875977 until the element ('id', 'userName') is visible
+2021-09-22 21:23:48,391 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'userName') is visible
+2021-09-22 21:23:48,503 INFO logger.py setMSG [line:38 ] succeed to input asdf 123 into the element: ('id', 'userName')
+2021-09-22 21:23:48,535 INFO logger.py setMSG [line:38 ] wait 0.0258634090423584 until the element ('id', 'loginButton') is visible
+2021-09-22 21:23:48,599 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:23:48,615 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:48,631 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:48,802 INFO logger.py setMSG [line:38 ] wait 0.010626792907714844 until the element ('id', 'userName') is visible
+2021-09-22 21:23:48,812 INFO logger.py setMSG [line:38 ] wait 0.008021354675292969 until the element ('id', 'userName') is visible
+2021-09-22 21:23:48,936 INFO logger.py setMSG [line:38 ] succeed to input !234344! into the element: ('id', 'userName')
+2021-09-22 21:23:48,951 INFO logger.py setMSG [line:38 ] wait 0.015626192092895508 until the element ('id', 'loginButton') is visible
+2021-09-22 21:23:49,014 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:23:49,042 INFO logger.py setMSG [line:38 ] wait 0.021961212158203125 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:49,053 INFO logger.py setMSG [line:38 ] wait 0.008000850677490234 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:49,237 INFO logger.py setMSG [line:38 ] wait 0.011960268020629883 until the element ('id', 'userName') is visible
+2021-09-22 21:23:49,253 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'userName') is visible
+2021-09-22 21:23:49,362 INFO logger.py setMSG [line:38 ] succeed to input   into the element: ('id', 'userName')
+2021-09-22 21:23:49,378 INFO logger.py setMSG [line:38 ] wait 0.01563262939453125 until the element ('id', 'loginButton') is visible
+2021-09-22 21:23:49,440 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:23:49,456 INFO logger.py setMSG [line:38 ] wait 0.01562666893005371 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:49,477 INFO logger.py setMSG [line:38 ] wait 0.015325784683227539 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:49,668 INFO logger.py setMSG [line:38 ] wait 0.00800633430480957 until the element ('id', 'userName') is visible
+2021-09-22 21:23:49,674 INFO logger.py setMSG [line:38 ] wait 0.004250764846801758 until the element ('id', 'userName') is visible
+2021-09-22 21:23:49,808 INFO logger.py setMSG [line:38 ] succeed to input ! into the element: ('id', 'userName')
+2021-09-22 21:23:49,820 INFO logger.py setMSG [line:38 ] wait 0.008987903594970703 until the element ('id', 'loginButton') is visible
+2021-09-22 21:23:49,883 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:23:49,899 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:49,914 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:50,251 INFO logger.py setMSG [line:38 ] wait 0.008744955062866211 until the element ('id', 'userName') is visible
+2021-09-22 21:23:50,268 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'userName') is visible
+2021-09-22 21:23:50,403 INFO logger.py setMSG [line:38 ] succeed to input !2343qdsdsfdfdfdczzzzzz into the element: ('id', 'userName')
+2021-09-22 21:23:50,434 INFO logger.py setMSG [line:38 ] wait 0.015625 until the element ('id', 'loginButton') is visible
+2021-09-22 21:23:50,503 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:23:50,519 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:50,535 INFO logger.py setMSG [line:38 ] wait 0.015643596649169922 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:50,772 INFO logger.py setMSG [line:38 ] wait 0.009243011474609375 until the element ('id', 'userName') is visible
+2021-09-22 21:23:50,788 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'userName') is visible
+2021-09-22 21:23:50,904 INFO logger.py setMSG [line:38 ] succeed to input  23abc  into the element: ('id', 'userName')
+2021-09-22 21:23:50,935 INFO logger.py setMSG [line:38 ] wait 0.015626907348632812 until the element ('id', 'loginButton') is visible
+2021-09-22 21:23:51,005 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:23:51,019 INFO logger.py setMSG [line:38 ] wait 0.007005214691162109 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:51,022 INFO logger.py setMSG [line:38 ] wait 0.0021538734436035156 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:23:51,194 INFO logger.py setMSG [line:38 ] wait 0.009006023406982422 until the element ('id', 'userName') is visible
+2021-09-22 21:23:51,208 INFO logger.py setMSG [line:38 ] wait 0.011001110076904297 until the element ('id', 'userName') is visible
+2021-09-22 21:23:51,322 INFO logger.py setMSG [line:38 ] succeed to input  into the element: ('id', 'userName')
+2021-09-22 21:23:51,338 INFO logger.py setMSG [line:38 ] wait 0.015626907348632812 until the element ('id', 'loginButton') is visible
+2021-09-22 21:23:51,416 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:23:51,584 INFO logger.py setMSG [line:38 ] wait 0.03534650802612305 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:51,612 INFO logger.py setMSG [line:38 ] wait 0.020888566970825195 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:51,774 INFO logger.py setMSG [line:38 ] succeed to input 12 into the element: ('id', 'addend1')
+2021-09-22 21:23:51,790 INFO logger.py setMSG [line:38 ] wait 0.012010812759399414 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:51,805 INFO logger.py setMSG [line:38 ] wait 0.015621423721313477 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:51,955 INFO logger.py setMSG [line:38 ] succeed to input 34 into the element: ('id', 'addend2')
+2021-09-22 21:23:51,993 INFO logger.py setMSG [line:38 ] wait 0.017512798309326172 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:52,114 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:52,172 INFO logger.py setMSG [line:38 ] wait 0.018513202667236328 until the element ('id', 'sum') is visible
+2021-09-22 21:23:52,195 INFO logger.py setMSG [line:38 ] wait 0.010007619857788086 until the element ('id', 'sum') is visible
+2021-09-22 21:23:52,989 INFO logger.py setMSG [line:38 ] wait 0.009987831115722656 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:53,006 INFO logger.py setMSG [line:38 ] wait 0.01700282096862793 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:53,123 INFO logger.py setMSG [line:38 ] succeed to input -12 into the element: ('id', 'addend1')
+2021-09-22 21:23:53,139 INFO logger.py setMSG [line:38 ] wait 0.015623092651367188 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:53,154 INFO logger.py setMSG [line:38 ] wait 0.01562809944152832 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:53,274 INFO logger.py setMSG [line:38 ] succeed to input 1234567834 into the element: ('id', 'addend2')
+2021-09-22 21:23:53,294 INFO logger.py setMSG [line:38 ] wait 0.01612234115600586 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:53,357 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:53,372 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:53,388 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:53,555 INFO logger.py setMSG [line:38 ] wait 0.004518747329711914 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:53,571 INFO logger.py setMSG [line:38 ] wait 0.015625953674316406 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:53,708 INFO logger.py setMSG [line:38 ] succeed to input -1234556789 into the element: ('id', 'addend1')
+2021-09-22 21:23:53,739 INFO logger.py setMSG [line:38 ] wait 0.01562643051147461 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:53,739 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:53,859 INFO logger.py setMSG [line:38 ] succeed to input -11 into the element: ('id', 'addend2')
+2021-09-22 21:23:53,875 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:53,924 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:53,940 INFO logger.py setMSG [line:38 ] wait 0.015604019165039062 until the element ('id', 'sum') is visible
+2021-09-22 21:23:53,967 INFO logger.py setMSG [line:38 ] wait 0.020021915435791016 until the element ('id', 'sum') is visible
+2021-09-22 21:23:54,136 INFO logger.py setMSG [line:38 ] wait 0.00961160659790039 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:54,152 INFO logger.py setMSG [line:38 ] wait 0.00800323486328125 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:54,274 INFO logger.py setMSG [line:38 ] succeed to input  123  into the element: ('id', 'addend1')
+2021-09-22 21:23:54,290 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:54,306 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:54,408 INFO logger.py setMSG [line:38 ] succeed to input  1qq  into the element: ('id', 'addend2')
+2021-09-22 21:23:54,423 INFO logger.py setMSG [line:38 ] wait 0.01562666893005371 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:54,497 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:54,529 INFO logger.py setMSG [line:38 ] wait 0.015630245208740234 until the element ('id', 'sum') is visible
+2021-09-22 21:23:54,529 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:54,721 INFO logger.py setMSG [line:38 ] wait 0.011235713958740234 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:54,741 INFO logger.py setMSG [line:38 ] wait 0.0049457550048828125 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:54,874 INFO logger.py setMSG [line:38 ] succeed to input        1.23 into the element: ('id', 'addend1')
+2021-09-22 21:23:54,890 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:54,906 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:55,021 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'addend2')
+2021-09-22 21:23:55,026 INFO logger.py setMSG [line:38 ] wait 0.005480289459228516 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:55,093 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:55,109 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:55,130 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:55,316 INFO logger.py setMSG [line:38 ] wait 0.009006023406982422 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:55,337 INFO logger.py setMSG [line:38 ] wait 0.012341737747192383 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:55,455 INFO logger.py setMSG [line:38 ] succeed to input 1.23 into the element: ('id', 'addend1')
+2021-09-22 21:23:55,459 INFO logger.py setMSG [line:38 ] wait 0.0043294429779052734 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:55,475 INFO logger.py setMSG [line:38 ] wait 0.015626907348632812 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:55,631 INFO logger.py setMSG [line:38 ] succeed to input 12.3 into the element: ('id', 'addend2')
+2021-09-22 21:23:55,648 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:55,700 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:55,715 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:55,731 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:55,873 INFO logger.py setMSG [line:38 ] wait 0.00897669792175293 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:55,882 INFO logger.py setMSG [line:38 ] wait 0.008008241653442383 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:56,009 INFO logger.py setMSG [line:38 ] succeed to input -1qq into the element: ('id', 'addend1')
+2021-09-22 21:23:56,025 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:56,040 INFO logger.py setMSG [line:38 ] wait 0.01562809944152832 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:56,165 INFO logger.py setMSG [line:38 ] succeed to input -12q3 into the element: ('id', 'addend2')
+2021-09-22 21:23:56,177 INFO logger.py setMSG [line:38 ] wait 0.007985115051269531 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:56,244 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:56,259 INFO logger.py setMSG [line:38 ] wait 0.015626907348632812 until the element ('id', 'sum') is visible
+2021-09-22 21:23:56,275 INFO logger.py setMSG [line:38 ] wait 0.015624761581420898 until the element ('id', 'sum') is visible
+2021-09-22 21:23:56,447 INFO logger.py setMSG [line:38 ] wait 0.01402592658996582 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:56,455 INFO logger.py setMSG [line:38 ] wait 0.00664067268371582 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:56,581 INFO logger.py setMSG [line:38 ] succeed to input 1 23 into the element: ('id', 'addend1')
+2021-09-22 21:23:56,594 INFO logger.py setMSG [line:38 ] wait 0.009006738662719727 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:56,609 INFO logger.py setMSG [line:38 ] wait 0.015627384185791016 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:56,729 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'addend2')
+2021-09-22 21:23:56,745 INFO logger.py setMSG [line:38 ] wait 0.007336139678955078 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:56,808 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:56,811 INFO logger.py setMSG [line:38 ] wait 0.003221750259399414 until the element ('id', 'sum') is visible
+2021-09-22 21:23:56,827 INFO logger.py setMSG [line:38 ] wait 0.015643835067749023 until the element ('id', 'sum') is visible
+2021-09-22 21:23:57,308 INFO logger.py setMSG [line:38 ] wait 0.011269569396972656 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:57,317 INFO logger.py setMSG [line:38 ] wait 0.00866389274597168 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:57,444 INFO logger.py setMSG [line:38 ] succeed to input Keys.SPACE into the element: ('id', 'addend1')
+2021-09-22 21:23:57,459 INFO logger.py setMSG [line:38 ] wait 0.01562786102294922 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:57,475 INFO logger.py setMSG [line:38 ] wait 0.015623331069946289 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:57,611 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'addend2')
+2021-09-22 21:23:57,627 INFO logger.py setMSG [line:38 ] wait 0.015624761581420898 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:57,694 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:57,710 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:57,725 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:58,096 INFO logger.py setMSG [line:38 ] wait 0.008461952209472656 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:58,113 INFO logger.py setMSG [line:38 ] wait 0.011011362075805664 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:58,220 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'addend1')
+2021-09-22 21:23:58,236 INFO logger.py setMSG [line:38 ] wait 0.015629291534423828 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:58,267 INFO logger.py setMSG [line:38 ] wait 0.015623331069946289 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:58,378 INFO logger.py setMSG [line:38 ] succeed to input Keys.TAB into the element: ('id', 'addend2')
+2021-09-22 21:23:58,408 INFO logger.py setMSG [line:38 ] wait 0.023709774017333984 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:58,480 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:58,495 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:58,511 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:58,819 INFO logger.py setMSG [line:38 ] wait 0.008048772811889648 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:58,850 INFO logger.py setMSG [line:38 ] wait 0.01564311981201172 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:58,964 INFO logger.py setMSG [line:38 ] succeed to input 123! into the element: ('id', 'addend1')
+2021-09-22 21:23:58,980 INFO logger.py setMSG [line:38 ] wait 0.015636920928955078 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:58,995 INFO logger.py setMSG [line:38 ] wait 0.015613794326782227 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:59,113 INFO logger.py setMSG [line:38 ] succeed to input *123 into the element: ('id', 'addend2')
+2021-09-22 21:23:59,128 INFO logger.py setMSG [line:38 ] wait 0.01562356948852539 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:59,191 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:59,207 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:59,227 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:59,503 INFO logger.py setMSG [line:38 ] wait 0.008007526397705078 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:59,518 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'addend1') is visible
+2021-09-22 21:23:59,643 INFO logger.py setMSG [line:38 ] succeed to input qa1 into the element: ('id', 'addend1')
+2021-09-22 21:23:59,674 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:59,690 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'addend2') is visible
+2021-09-22 21:23:59,798 INFO logger.py setMSG [line:38 ] succeed to input qa2 into the element: ('id', 'addend2')
+2021-09-22 21:23:59,814 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'additionButton') is visible
+2021-09-22 21:23:59,876 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:23:59,892 INFO logger.py setMSG [line:38 ] wait 0.0 until the element ('id', 'sum') is visible
+2021-09-22 21:23:59,907 INFO logger.py setMSG [line:38 ] wait 0.015624523162841797 until the element ('id', 'sum') is visible
+2021-09-22 21:24:00,123 INFO logger.py setMSG [line:38 ] wait 0.015010356903076172 until the element ('link text', 'Go to second page.') is visible
+2021-09-22 21:24:01,309 INFO logger.py setMSG [line:38 ] succeed to click the element: ('link text', 'Go to second page.')
+2021-09-22 21:24:01,319 INFO logger.py setMSG [line:38 ] wait 0.010069608688354492 until the element ('id', 'header') is visible
+2021-09-22 21:42:11,076 INFO logger.py setMSG [line:38 ] wait 0.01901388168334961 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:11,099 INFO logger.py setMSG [line:38 ] wait 0.01000833511352539 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:11,632 INFO logger.py setMSG [line:38 ] wait 0.014009475708007812 until the element ('id', 'userName') is visible
+2021-09-22 21:42:11,650 INFO logger.py setMSG [line:38 ] wait 0.010001182556152344 until the element ('id', 'userName') is visible
+2021-09-22 21:42:11,804 INFO logger.py setMSG [line:38 ] succeed to input asdf123 into the element: ('id', 'userName')
+2021-09-22 21:42:11,832 INFO logger.py setMSG [line:38 ] wait 0.015010833740234375 until the element ('id', 'loginButton') is visible
+2021-09-22 21:42:11,895 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:42:11,909 INFO logger.py setMSG [line:38 ] wait 0.007007122039794922 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:11,922 INFO logger.py setMSG [line:38 ] wait 0.0070040225982666016 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:12,194 INFO logger.py setMSG [line:38 ] wait 0.009023666381835938 until the element ('id', 'userName') is visible
+2021-09-22 21:42:12,212 INFO logger.py setMSG [line:38 ] wait 0.009915351867675781 until the element ('id', 'userName') is visible
+2021-09-22 21:42:12,348 INFO logger.py setMSG [line:38 ] succeed to input asdf 123 into the element: ('id', 'userName')
+2021-09-22 21:42:12,368 INFO logger.py setMSG [line:38 ] wait 0.00700688362121582 until the element ('id', 'loginButton') is visible
+2021-09-22 21:42:12,431 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:42:12,446 INFO logger.py setMSG [line:38 ] wait 0.007985591888427734 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:12,464 INFO logger.py setMSG [line:38 ] wait 0.007966279983520508 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:12,622 INFO logger.py setMSG [line:38 ] wait 0.012006282806396484 until the element ('id', 'userName') is visible
+2021-09-22 21:42:12,642 INFO logger.py setMSG [line:38 ] wait 0.01194453239440918 until the element ('id', 'userName') is visible
+2021-09-22 21:42:12,775 INFO logger.py setMSG [line:38 ] succeed to input !234344! into the element: ('id', 'userName')
+2021-09-22 21:42:12,789 INFO logger.py setMSG [line:38 ] wait 0.007988691329956055 until the element ('id', 'loginButton') is visible
+2021-09-22 21:42:12,847 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:42:12,862 INFO logger.py setMSG [line:38 ] wait 0.006986141204833984 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:12,876 INFO logger.py setMSG [line:38 ] wait 0.008009195327758789 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:13,089 INFO logger.py setMSG [line:38 ] wait 0.00798487663269043 until the element ('id', 'userName') is visible
+2021-09-22 21:42:13,111 INFO logger.py setMSG [line:38 ] wait 0.014948606491088867 until the element ('id', 'userName') is visible
+2021-09-22 21:42:13,231 INFO logger.py setMSG [line:38 ] succeed to input   into the element: ('id', 'userName')
+2021-09-22 21:42:13,246 INFO logger.py setMSG [line:38 ] wait 0.008533954620361328 until the element ('id', 'loginButton') is visible
+2021-09-22 21:42:13,311 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:42:13,331 INFO logger.py setMSG [line:38 ] wait 0.008949041366577148 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:13,348 INFO logger.py setMSG [line:38 ] wait 0.007986068725585938 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:13,560 INFO logger.py setMSG [line:38 ] wait 0.00884246826171875 until the element ('id', 'userName') is visible
+2021-09-22 21:42:13,580 INFO logger.py setMSG [line:38 ] wait 0.013005971908569336 until the element ('id', 'userName') is visible
+2021-09-22 21:42:13,700 INFO logger.py setMSG [line:38 ] succeed to input ! into the element: ('id', 'userName')
+2021-09-22 21:42:13,718 INFO logger.py setMSG [line:38 ] wait 0.009759902954101562 until the element ('id', 'loginButton') is visible
+2021-09-22 21:42:13,780 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:42:13,797 INFO logger.py setMSG [line:38 ] wait 0.008531332015991211 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:13,812 INFO logger.py setMSG [line:38 ] wait 0.00833272933959961 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:14,217 INFO logger.py setMSG [line:38 ] wait 0.017029523849487305 until the element ('id', 'userName') is visible
+2021-09-22 21:42:14,238 INFO logger.py setMSG [line:38 ] wait 0.00900721549987793 until the element ('id', 'userName') is visible
+2021-09-22 21:42:14,374 INFO logger.py setMSG [line:38 ] succeed to input !2343qdsdsfdfdfdczzzzzz into the element: ('id', 'userName')
+2021-09-22 21:42:14,390 INFO logger.py setMSG [line:38 ] wait 0.008005142211914062 until the element ('id', 'loginButton') is visible
+2021-09-22 21:42:14,467 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:42:14,482 INFO logger.py setMSG [line:38 ] wait 0.007005929946899414 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:14,496 INFO logger.py setMSG [line:38 ] wait 0.008008241653442383 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:14,648 INFO logger.py setMSG [line:38 ] wait 0.015625476837158203 until the element ('id', 'userName') is visible
+2021-09-22 21:42:14,666 INFO logger.py setMSG [line:38 ] wait 0.008545160293579102 until the element ('id', 'userName') is visible
+2021-09-22 21:42:14,788 INFO logger.py setMSG [line:38 ] succeed to input  23abc  into the element: ('id', 'userName')
+2021-09-22 21:42:14,808 INFO logger.py setMSG [line:38 ] wait 0.013990163803100586 until the element ('id', 'loginButton') is visible
+2021-09-22 21:42:14,886 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:42:14,900 INFO logger.py setMSG [line:38 ] wait 0.008652210235595703 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:14,914 INFO logger.py setMSG [line:38 ] wait 0.006984710693359375 until the element ('id', 'loggedInUser') is visible
+2021-09-22 21:42:15,108 INFO logger.py setMSG [line:38 ] wait 0.01199030876159668 until the element ('id', 'userName') is visible
+2021-09-22 21:42:15,126 INFO logger.py setMSG [line:38 ] wait 0.00800776481628418 until the element ('id', 'userName') is visible
+2021-09-22 21:42:15,271 INFO logger.py setMSG [line:38 ] succeed to input  into the element: ('id', 'userName')
+2021-09-22 21:42:15,285 INFO logger.py setMSG [line:38 ] wait 0.0070073604583740234 until the element ('id', 'loginButton') is visible
+2021-09-22 21:42:15,348 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'loginButton')
+2021-09-22 21:42:15,682 INFO logger.py setMSG [line:38 ] wait 0.023018360137939453 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:15,707 INFO logger.py setMSG [line:38 ] wait 0.009000062942504883 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:15,844 INFO logger.py setMSG [line:38 ] succeed to input 12 into the element: ('id', 'addend1')
+2021-09-22 21:42:15,868 INFO logger.py setMSG [line:38 ] wait 0.01200723648071289 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:15,882 INFO logger.py setMSG [line:38 ] wait 0.008009195327758789 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:15,988 INFO logger.py setMSG [line:38 ] succeed to input 34 into the element: ('id', 'addend2')
+2021-09-22 21:42:16,011 INFO logger.py setMSG [line:38 ] wait 0.015448808670043945 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:16,074 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:16,095 INFO logger.py setMSG [line:38 ] wait 0.012486696243286133 until the element ('id', 'sum') is visible
+2021-09-22 21:42:16,110 INFO logger.py setMSG [line:38 ] wait 0.009006500244140625 until the element ('id', 'sum') is visible
+2021-09-22 21:42:16,670 INFO logger.py setMSG [line:38 ] wait 0.00902414321899414 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:16,685 INFO logger.py setMSG [line:38 ] wait 0.007985115051269531 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:16,814 INFO logger.py setMSG [line:38 ] succeed to input -12 into the element: ('id', 'addend1')
+2021-09-22 21:42:16,830 INFO logger.py setMSG [line:38 ] wait 0.008005619049072266 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:16,844 INFO logger.py setMSG [line:38 ] wait 0.007004261016845703 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:16,971 INFO logger.py setMSG [line:38 ] succeed to input 1234567834 into the element: ('id', 'addend2')
+2021-09-22 21:42:16,986 INFO logger.py setMSG [line:38 ] wait 0.00899648666381836 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:17,047 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:17,063 INFO logger.py setMSG [line:38 ] wait 0.008005142211914062 until the element ('id', 'sum') is visible
+2021-09-22 21:42:17,079 INFO logger.py setMSG [line:38 ] wait 0.0074579715728759766 until the element ('id', 'sum') is visible
+2021-09-22 21:42:17,296 INFO logger.py setMSG [line:38 ] wait 0.007986068725585938 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:17,317 INFO logger.py setMSG [line:38 ] wait 0.014264345169067383 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:17,460 INFO logger.py setMSG [line:38 ] succeed to input -1234556789 into the element: ('id', 'addend1')
+2021-09-22 21:42:17,482 INFO logger.py setMSG [line:38 ] wait 0.014007091522216797 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:17,501 INFO logger.py setMSG [line:38 ] wait 0.007998943328857422 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:17,609 INFO logger.py setMSG [line:38 ] succeed to input -11 into the element: ('id', 'addend2')
+2021-09-22 21:42:17,623 INFO logger.py setMSG [line:38 ] wait 0.0070040225982666016 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:17,692 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:17,710 INFO logger.py setMSG [line:38 ] wait 0.009007453918457031 until the element ('id', 'sum') is visible
+2021-09-22 21:42:17,726 INFO logger.py setMSG [line:38 ] wait 0.008007526397705078 until the element ('id', 'sum') is visible
+2021-09-22 21:42:17,854 INFO logger.py setMSG [line:38 ] wait 0.02001500129699707 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:17,874 INFO logger.py setMSG [line:38 ] wait 0.00800466537475586 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:17,986 INFO logger.py setMSG [line:38 ] succeed to input  123  into the element: ('id', 'addend1')
+2021-09-22 21:42:18,005 INFO logger.py setMSG [line:38 ] wait 0.0070018768310546875 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:18,018 INFO logger.py setMSG [line:38 ] wait 0.007005929946899414 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:18,135 INFO logger.py setMSG [line:38 ] succeed to input  1qq  into the element: ('id', 'addend2')
+2021-09-22 21:42:18,150 INFO logger.py setMSG [line:38 ] wait 0.008006811141967773 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:18,219 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:18,236 INFO logger.py setMSG [line:38 ] wait 0.008407115936279297 until the element ('id', 'sum') is visible
+2021-09-22 21:42:18,251 INFO logger.py setMSG [line:38 ] wait 0.008018255233764648 until the element ('id', 'sum') is visible
+2021-09-22 21:42:18,367 INFO logger.py setMSG [line:38 ] wait 0.007892370223999023 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:18,389 INFO logger.py setMSG [line:38 ] wait 0.013225793838500977 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:18,518 INFO logger.py setMSG [line:38 ] succeed to input        1.23 into the element: ('id', 'addend1')
+2021-09-22 21:42:18,538 INFO logger.py setMSG [line:38 ] wait 0.007857322692871094 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:18,554 INFO logger.py setMSG [line:38 ] wait 0.008455991744995117 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:18,660 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'addend2')
+2021-09-22 21:42:18,678 INFO logger.py setMSG [line:38 ] wait 0.009628534317016602 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:18,739 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:18,757 INFO logger.py setMSG [line:38 ] wait 0.007990598678588867 until the element ('id', 'sum') is visible
+2021-09-22 21:42:18,774 INFO logger.py setMSG [line:38 ] wait 0.007985591888427734 until the element ('id', 'sum') is visible
+2021-09-22 21:42:18,996 INFO logger.py setMSG [line:38 ] wait 0.009006977081298828 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:19,014 INFO logger.py setMSG [line:38 ] wait 0.011987924575805664 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:19,133 INFO logger.py setMSG [line:38 ] succeed to input 1.23 into the element: ('id', 'addend1')
+2021-09-22 21:42:19,152 INFO logger.py setMSG [line:38 ] wait 0.01116633415222168 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:19,172 INFO logger.py setMSG [line:38 ] wait 0.008421659469604492 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:19,285 INFO logger.py setMSG [line:38 ] succeed to input 12.3 into the element: ('id', 'addend2')
+2021-09-22 21:42:19,303 INFO logger.py setMSG [line:38 ] wait 0.008005619049072266 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:19,366 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:19,383 INFO logger.py setMSG [line:38 ] wait 0.007986307144165039 until the element ('id', 'sum') is visible
+2021-09-22 21:42:19,402 INFO logger.py setMSG [line:38 ] wait 0.008005619049072266 until the element ('id', 'sum') is visible
+2021-09-22 21:42:19,528 INFO logger.py setMSG [line:38 ] wait 0.007005214691162109 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:19,548 INFO logger.py setMSG [line:38 ] wait 0.013027667999267578 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:19,679 INFO logger.py setMSG [line:38 ] succeed to input -1qq into the element: ('id', 'addend1')
+2021-09-22 21:42:19,694 INFO logger.py setMSG [line:38 ] wait 0.008006811141967773 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:19,713 INFO logger.py setMSG [line:38 ] wait 0.011213302612304688 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:19,827 INFO logger.py setMSG [line:38 ] succeed to input -12q3 into the element: ('id', 'addend2')
+2021-09-22 21:42:19,844 INFO logger.py setMSG [line:38 ] wait 0.010221719741821289 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:19,916 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:19,932 INFO logger.py setMSG [line:38 ] wait 0.00801539421081543 until the element ('id', 'sum') is visible
+2021-09-22 21:42:19,947 INFO logger.py setMSG [line:38 ] wait 0.008008241653442383 until the element ('id', 'sum') is visible
+2021-09-22 21:42:20,077 INFO logger.py setMSG [line:38 ] wait 0.007990837097167969 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:20,094 INFO logger.py setMSG [line:38 ] wait 0.008450031280517578 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:20,228 INFO logger.py setMSG [line:38 ] succeed to input 1 23 into the element: ('id', 'addend1')
+2021-09-22 21:42:20,254 INFO logger.py setMSG [line:38 ] wait 0.016011476516723633 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:20,274 INFO logger.py setMSG [line:38 ] wait 0.008009910583496094 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:20,377 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'addend2')
+2021-09-22 21:42:20,390 INFO logger.py setMSG [line:38 ] wait 0.0070035457611083984 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:20,449 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:20,463 INFO logger.py setMSG [line:38 ] wait 0.00800633430480957 until the element ('id', 'sum') is visible
+2021-09-22 21:42:20,477 INFO logger.py setMSG [line:38 ] wait 0.008005142211914062 until the element ('id', 'sum') is visible
+2021-09-22 21:42:22,612 INFO logger.py setMSG [line:38 ] wait 0.014036893844604492 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:22,627 INFO logger.py setMSG [line:38 ] wait 0.008007526397705078 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:22,759 INFO logger.py setMSG [line:38 ] succeed to input Keys.SPACE into the element: ('id', 'addend1')
+2021-09-22 21:42:22,782 INFO logger.py setMSG [line:38 ] wait 0.014011144638061523 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:22,797 INFO logger.py setMSG [line:38 ] wait 0.007632255554199219 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:22,912 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'addend2')
+2021-09-22 21:42:22,928 INFO logger.py setMSG [line:38 ] wait 0.007004737854003906 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:22,990 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:23,005 INFO logger.py setMSG [line:38 ] wait 0.008005619049072266 until the element ('id', 'sum') is visible
+2021-09-22 21:42:23,019 INFO logger.py setMSG [line:38 ] wait 0.007020473480224609 until the element ('id', 'sum') is visible
+2021-09-22 21:42:24,402 INFO logger.py setMSG [line:38 ] wait 0.01286625862121582 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:24,426 INFO logger.py setMSG [line:38 ] wait 0.017660140991210938 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:24,547 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'addend1')
+2021-09-22 21:42:24,563 INFO logger.py setMSG [line:38 ] wait 0.00898122787475586 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:24,582 INFO logger.py setMSG [line:38 ] wait 0.011664390563964844 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:24,703 INFO logger.py setMSG [line:38 ] succeed to input Keys.TAB into the element: ('id', 'addend2')
+2021-09-22 21:42:24,719 INFO logger.py setMSG [line:38 ] wait 0.008841753005981445 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:24,787 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:24,805 INFO logger.py setMSG [line:38 ] wait 0.009006738662719727 until the element ('id', 'sum') is visible
+2021-09-22 21:42:24,820 INFO logger.py setMSG [line:38 ] wait 0.007842302322387695 until the element ('id', 'sum') is visible
+2021-09-22 21:42:25,294 INFO logger.py setMSG [line:38 ] wait 0.018013715744018555 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:25,329 INFO logger.py setMSG [line:38 ] wait 0.025014162063598633 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:25,461 INFO logger.py setMSG [line:38 ] succeed to input 123! into the element: ('id', 'addend1')
+2021-09-22 21:42:25,484 INFO logger.py setMSG [line:38 ] wait 0.014011144638061523 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:25,500 INFO logger.py setMSG [line:38 ] wait 0.009007453918457031 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:25,609 INFO logger.py setMSG [line:38 ] succeed to input *123 into the element: ('id', 'addend2')
+2021-09-22 21:42:25,623 INFO logger.py setMSG [line:38 ] wait 0.007005453109741211 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:25,683 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:25,698 INFO logger.py setMSG [line:38 ] wait 0.00800466537475586 until the element ('id', 'sum') is visible
+2021-09-22 21:42:25,716 INFO logger.py setMSG [line:38 ] wait 0.009988546371459961 until the element ('id', 'sum') is visible
+2021-09-22 21:42:25,839 INFO logger.py setMSG [line:38 ] wait 0.007993698120117188 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:25,859 INFO logger.py setMSG [line:38 ] wait 0.010016918182373047 until the element ('id', 'addend1') is visible
+2021-09-22 21:42:25,980 INFO logger.py setMSG [line:38 ] succeed to input qa1 into the element: ('id', 'addend1')
+2021-09-22 21:42:25,994 INFO logger.py setMSG [line:38 ] wait 0.008705854415893555 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:26,013 INFO logger.py setMSG [line:38 ] wait 0.007994413375854492 until the element ('id', 'addend2') is visible
+2021-09-22 21:42:26,129 INFO logger.py setMSG [line:38 ] succeed to input qa2 into the element: ('id', 'addend2')
+2021-09-22 21:42:26,145 INFO logger.py setMSG [line:38 ] wait 0.0089874267578125 until the element ('id', 'additionButton') is visible
+2021-09-22 21:42:26,208 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'additionButton')
+2021-09-22 21:42:26,223 INFO logger.py setMSG [line:38 ] wait 0.008209705352783203 until the element ('id', 'sum') is visible
+2021-09-22 21:42:26,239 INFO logger.py setMSG [line:38 ] wait 0.007817268371582031 until the element ('id', 'sum') is visible
+2021-09-22 21:42:26,627 INFO logger.py setMSG [line:38 ] wait 0.0300140380859375 until the element ('link text', 'Go to second page.') is visible
+2021-09-22 21:42:29,000 INFO logger.py setMSG [line:38 ] succeed to click the element: ('link text', 'Go to second page.')
+2021-09-22 21:42:29,027 INFO logger.py setMSG [line:38 ] wait 0.02100372314453125 until the element ('id', 'header') is visible
