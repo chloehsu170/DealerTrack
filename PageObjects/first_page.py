@@ -8,7 +8,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from PageLocators.first_page_locator import FirstPageLocator as locchloehsu
+from PageLocators.first_page_locator import FirstPageLocator as loc
+from common.basepage import BasePage
 
 class FirstPage(BasePage):
     def check_user_ele_exists(self):
