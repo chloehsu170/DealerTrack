@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+TestCases/__pycache__/test_third.cpython-36.pyc
+common/__pycache__/HTMLTestRunner.cpython-36.pyc
+.gitignore
+common/__pycache__/__init__.cpython-36.pyc
+common/__pycache__/dir_config.cpython-36.pyc
+common/__pycache__/HTMLTestRunner.cpython-36.pyc
+TestCases/__pycache__/test_first.cpython-36.pyc
+TestCases/__pycache__/test_second.cpython-36.pyc
+TestCases/__pycache__/test_third.cpython-36.pyc
