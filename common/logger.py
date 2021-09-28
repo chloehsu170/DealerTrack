@@ -10,7 +10,7 @@ import os
 import time
 from common import dir_config
 
-class log:
+class Log:
     def __init__(self):
         self.logname = "mylog"
 

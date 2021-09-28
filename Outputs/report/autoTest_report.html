@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dealertarck's Test Report</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.4"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+.img{
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+    border: 2px solid #777;
+}
+
+.screenshots {
+    z-index: 100;
+	position:absolute;
+	left: 23%;
+	top: 20%;
+	display: none;
+}
+.close_shots {
+	position:absolute;
+	top:0; left:98%;
+	z-index:99;
+	width:20px;
+}
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.Testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+-->
+function show_shots(obj) {
+	obj.nextElementSibling.style.display="block";
+
+}
+
+function close_shots(obj) {
+	obj.parentElement.style.display="none";
+}
+</script>
+
+<div class='heading'>
+<h1>Dealertarck's Test Report</h1>
+<p class='attribute'><strong>Start Time:</strong> 2021-09-23 22:52:00</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:49.404105</p>
+<p class='attribute'><strong>Status:</strong> Pass 28</p>
+
+<p class='description'>Auto UI Test Coding Session</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+    <td>ScreenShot</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_second.TestSecond</td>
+    <td>14</td>
+    <td>14</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',14)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_substract_success_1: positive cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: 2021-09-23 22:52:05,256 INFO logger.py setMSG [line:38 ] wait 0.05603790283203125 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:05,277 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:05,400 INFO logger.py setMSG [line:38 ] succeed to input 12 into the element: ('id', 'minuend')
+2021-09-23 22:52:05,447 INFO logger.py setMSG [line:38 ] wait 0.03125286102294922 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:05,463 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:05,573 INFO logger.py setMSG [line:38 ] succeed to input 34 into the element: ('id', 'subtrahend')
+2021-09-23 22:52:05,620 INFO logger.py setMSG [line:38 ] wait 0.031250715255737305 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:05,636 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:05,707 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:05,738 INFO logger.py setMSG [line:38 ] wait 0.03125190734863281 until the element ('id', 'difference') is visible
+2021-09-23 22:52:06,819 INFO logger.py setMSG [line:38 ] wait 1.0656960010528564 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_substract_success_2: positive cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: 2021-09-23 22:52:06,976 INFO logger.py setMSG [line:38 ] wait 0.03783869743347168 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:06,997 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:07,130 INFO logger.py setMSG [line:38 ] succeed to input -12 into the element: ('id', 'minuend')
+2021-09-23 22:52:07,158 INFO logger.py setMSG [line:38 ] wait 0.011556863784790039 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:07,176 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:07,292 INFO logger.py setMSG [line:38 ] succeed to input 1234567834 into the element: ('id', 'subtrahend')
+2021-09-23 22:52:07,321 INFO logger.py setMSG [line:38 ] wait 0.02094244956970215 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:07,325 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:07,393 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:07,424 INFO logger.py setMSG [line:38 ] wait 0.013988256454467773 until the element ('id', 'difference') is visible
+2021-09-23 22:52:08,489 INFO logger.py setMSG [line:38 ] wait 1.0490260124206543 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_substract_success_3: positive cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        pass</a>
+
+    <div id='div_pt1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.3: 2021-09-23 22:52:08,625 INFO logger.py setMSG [line:38 ] wait 0.030684232711791992 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:08,640 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:08,759 INFO logger.py setMSG [line:38 ] succeed to input -1234556789 into the element: ('id', 'minuend')
+2021-09-23 22:52:08,806 INFO logger.py setMSG [line:38 ] wait 0.031252384185791016 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:08,822 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:08,912 INFO logger.py setMSG [line:38 ] succeed to input -11 into the element: ('id', 'subtrahend')
+2021-09-23 22:52:08,956 INFO logger.py setMSG [line:38 ] wait 0.020872116088867188 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:08,960 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:09,027 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:09,043 INFO logger.py setMSG [line:38 ] wait 0.015333890914916992 until the element ('id', 'difference') is visible
+2021-09-23 22:52:10,123 INFO logger.py setMSG [line:38 ] wait 1.0794367790222168 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_substract_success_4: positive cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        pass</a>
+
+    <div id='div_pt1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.4: 2021-09-23 22:52:10,267 INFO logger.py setMSG [line:38 ] wait 0.028844594955444336 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:10,291 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:10,395 INFO logger.py setMSG [line:38 ] succeed to input  123  into the element: ('id', 'minuend')
+2021-09-23 22:52:10,441 INFO logger.py setMSG [line:38 ] wait 0.031250715255737305 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:10,457 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:10,562 INFO logger.py setMSG [line:38 ] succeed to input  1qq  into the element: ('id', 'subtrahend')
+2021-09-23 22:52:10,593 INFO logger.py setMSG [line:38 ] wait 0.03127002716064453 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:10,619 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:10,683 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:10,713 INFO logger.py setMSG [line:38 ] wait 0.021014928817749023 until the element ('id', 'difference') is visible
+2021-09-23 22:52:11,757 INFO logger.py setMSG [line:38 ] wait 1.028632402420044 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_substract_success_5: positive cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+        pass</a>
+
+    <div id='div_pt1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5: 2021-09-23 22:52:11,893 INFO logger.py setMSG [line:38 ] wait 0.028852462768554688 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:11,909 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:12,030 INFO logger.py setMSG [line:38 ] succeed to input        1.23 into the element: ('id', 'minuend')
+2021-09-23 22:52:12,061 INFO logger.py setMSG [line:38 ] wait 0.015625 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:12,077 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:12,176 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'subtrahend')
+2021-09-23 22:52:12,196 INFO logger.py setMSG [line:38 ] wait 0.018579721450805664 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:12,228 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:12,294 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:12,313 INFO logger.py setMSG [line:38 ] wait 0.018694400787353516 until the element ('id', 'difference') is visible
+2021-09-23 22:52:13,410 INFO logger.py setMSG [line:38 ] wait 1.0730087757110596 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_substract_success_6: positive cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+        pass</a>
+
+    <div id='div_pt1.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.6: 2021-09-23 22:52:13,676 INFO logger.py setMSG [line:38 ] wait 0.11380648612976074 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:13,870 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:14,462 INFO logger.py setMSG [line:38 ] succeed to input 1.23 into the element: ('id', 'minuend')
+2021-09-23 22:52:14,499 INFO logger.py setMSG [line:38 ] wait 0.021181106567382812 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:14,531 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:15,100 INFO logger.py setMSG [line:38 ] succeed to input 12.3 into the element: ('id', 'subtrahend')
+2021-09-23 22:52:15,145 INFO logger.py setMSG [line:38 ] wait 0.03237605094909668 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:15,167 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:15,583 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:15,841 INFO logger.py setMSG [line:38 ] wait 0.24273204803466797 until the element ('id', 'difference') is visible
+2021-09-23 22:52:17,101 INFO logger.py setMSG [line:38 ] wait 1.243926763534546 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_substract_success_7: positive cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
+        pass</a>
+
+    <div id='div_pt1.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.7: 2021-09-23 22:52:17,233 INFO logger.py setMSG [line:38 ] wait 0.024684429168701172 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:17,248 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:17,385 INFO logger.py setMSG [line:38 ] succeed to input -1qq into the element: ('id', 'minuend')
+2021-09-23 22:52:17,417 INFO logger.py setMSG [line:38 ] wait 0.015625 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:17,432 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:17,535 INFO logger.py setMSG [line:38 ] succeed to input -12q3 into the element: ('id', 'subtrahend')
+2021-09-23 22:52:17,569 INFO logger.py setMSG [line:38 ] wait 0.026103973388671875 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:17,590 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:17,648 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:17,667 INFO logger.py setMSG [line:38 ] wait 0.018027305603027344 until the element ('id', 'difference') is visible
+2021-09-23 22:52:18,838 INFO logger.py setMSG [line:38 ] wait 1.1232783794403076 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_substract_success_8: positive cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.8')" >
+        pass</a>
+
+    <div id='div_pt1.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.8: 2021-09-23 22:52:18,984 INFO logger.py setMSG [line:38 ] wait 0.027294397354125977 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:19,016 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:19,136 INFO logger.py setMSG [line:38 ] succeed to input 1 23 into the element: ('id', 'minuend')
+2021-09-23 22:52:19,167 INFO logger.py setMSG [line:38 ] wait 0.031248807907104492 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:19,198 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:19,315 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'subtrahend')
+2021-09-23 22:52:19,351 INFO logger.py setMSG [line:38 ] wait 0.020348072052001953 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:19,367 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:19,450 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:19,469 INFO logger.py setMSG [line:38 ] wait 0.01877117156982422 until the element ('id', 'difference') is visible
+2021-09-23 22:52:20,600 INFO logger.py setMSG [line:38 ] wait 1.0687487125396729 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.9' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_002_substract_wrong_1: negative cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.9')" >
+        pass</a>
+
+    <div id='div_pt1.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.9: 2021-09-23 22:52:20,718 INFO logger.py setMSG [line:38 ] wait 0.03569483757019043 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:20,749 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:20,912 INFO logger.py setMSG [line:38 ] succeed to input Keys.SPACE into the element: ('id', 'minuend')
+2021-09-23 22:52:20,956 INFO logger.py setMSG [line:38 ] wait 0.03702664375305176 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:20,972 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:21,120 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'subtrahend')
+2021-09-23 22:52:21,155 INFO logger.py setMSG [line:38 ] wait 0.018488645553588867 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:21,187 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:21,311 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:21,374 INFO logger.py setMSG [line:38 ] wait 0.05790233612060547 until the element ('id', 'difference') is visible
+2021-09-23 22:52:22,464 INFO logger.py setMSG [line:38 ] wait 1.0746045112609863 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.10' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_002_substract_wrong_2: negative cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.10')" >
+        pass</a>
+
+    <div id='div_pt1.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.10: 2021-09-23 22:52:22,587 INFO logger.py setMSG [line:38 ] wait 0.03290724754333496 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:22,609 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:22,958 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'minuend')
+2021-09-23 22:52:23,774 INFO logger.py setMSG [line:38 ] wait 0.8114535808563232 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:23,821 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:24,039 INFO logger.py setMSG [line:38 ] succeed to input Keys.TAB into the element: ('id', 'subtrahend')
+2021-09-23 22:52:24,086 INFO logger.py setMSG [line:38 ] wait 0.03125119209289551 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:24,101 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:24,200 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:24,228 INFO logger.py setMSG [line:38 ] wait 0.027141571044921875 until the element ('id', 'difference') is visible
+2021-09-23 22:52:25,295 INFO logger.py setMSG [line:38 ] wait 1.043102741241455 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.11' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_002_substract_wrong_3: negative cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.11')" >
+        pass</a>
+
+    <div id='div_pt1.11' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.11').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.11: 2021-09-23 22:52:25,406 INFO logger.py setMSG [line:38 ] wait 0.0170745849609375 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:25,422 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:25,543 INFO logger.py setMSG [line:38 ] succeed to input 123! into the element: ('id', 'minuend')
+2021-09-23 22:52:25,574 INFO logger.py setMSG [line:38 ] wait 0.015626192092895508 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:25,590 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:25,684 INFO logger.py setMSG [line:38 ] succeed to input *123 into the element: ('id', 'subtrahend')
+2021-09-23 22:52:25,709 INFO logger.py setMSG [line:38 ] wait 0.007654905319213867 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:25,724 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:25,789 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:25,836 INFO logger.py setMSG [line:38 ] wait 0.03125119209289551 until the element ('id', 'difference') is visible
+2021-09-23 22:52:26,912 INFO logger.py setMSG [line:38 ] wait 1.059760332107544 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.12' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_002_substract_wrong_4: negative cases of substract</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.12')" >
+        pass</a>
+
+    <div id='div_pt1.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.12: 2021-09-23 22:52:27,247 INFO logger.py setMSG [line:38 ] wait 0.1093745231628418 until the element ('id', 'minuend') is visible
+2021-09-23 22:52:27,262 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the second page of ('id', 'minuend')
+2021-09-23 22:52:27,513 INFO logger.py setMSG [line:38 ] succeed to input qa1 into the element: ('id', 'minuend')
+2021-09-23 22:52:27,560 INFO logger.py setMSG [line:38 ] wait 0.03047657012939453 until the element ('id', 'subtrahend') is visible
+2021-09-23 22:52:27,576 INFO logger.py setMSG [line:38 ] succeed to find the element: input the second number in the second page of ('id', 'subtrahend')
+2021-09-23 22:52:27,685 INFO logger.py setMSG [line:38 ] succeed to input qa2 into the element: ('id', 'subtrahend')
+2021-09-23 22:52:27,711 INFO logger.py setMSG [line:38 ] wait 0.010299205780029297 until the element ('id', 'subtractionButton') is visible
+2021-09-23 22:52:27,726 INFO logger.py setMSG [line:38 ] succeed to find the element: click substract button of ('id', 'subtractionButton')
+2021-09-23 22:52:27,773 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'subtractionButton')
+2021-09-23 22:52:27,832 INFO logger.py setMSG [line:38 ] wait 0.043182373046875 until the element ('id', 'difference') is visible
+2021-09-23 22:52:28,886 INFO logger.py setMSG [line:38 ] wait 1.0385708808898926 until the element ('id', 'difference')'s value is visible
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.13' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_003_pop_up_message: check pop up message</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.13')" >
+        pass</a>
+
+    <div id='div_pt1.13' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.13').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.13: 2021-09-23 22:52:28,998 INFO logger.py setMSG [line:38 ] wait 0.04413032531738281 until the element ('id', 'popupButton') is visible
+2021-09-23 22:52:29,013 INFO logger.py setMSG [line:38 ] succeed to find the element: click pop-up window of ('id', 'popupButton')
+2021-09-23 22:52:29,096 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'popupButton')
+2021-09-23 22:52:29,112 INFO logger.py setMSG [line:38 ] succeed to switch to alert
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.14' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_004_link_success: check the third page link</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.14')" >
+        pass</a>
+
+    <div id='div_pt1.14' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.14').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.14: 2021-09-23 22:52:29,282 INFO logger.py setMSG [line:38 ] wait 0.032755374908447266 until the element ('link text', 'Go to third page.') is visible
+2021-09-23 22:52:29,308 INFO logger.py setMSG [line:38 ] succeed to find the element: third page link loc of ('link text', 'Go to third page.')
+2021-09-23 22:52:30,171 INFO logger.py setMSG [line:38 ] succeed to click the element: ('link text', 'Go to third page.')
+2021-09-23 22:52:30,205 INFO logger.py setMSG [line:38 ] wait 0.017069339752197266 until the element ('id', 'header') is visible
+2021-09-23 22:52:30,221 INFO logger.py setMSG [line:38 ] succeed to find the element: check the third page text of ('id', 'header')
+2021-09-23 22:52:30,252 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'header')'s text: Third page.
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_third.TestThird</td>
+    <td>14</td>
+    <td>14</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',14)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_multiply_success_1: positive cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        pass</a>
+
+    <div id='div_pt2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.1: 2021-09-23 22:52:39,886 INFO logger.py setMSG [line:38 ] wait 0.047425031661987305 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:39,901 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:40,023 INFO logger.py setMSG [line:38 ] succeed to input 12 into the element: ('id', 'multiplier')
+2021-09-23 22:52:40,054 INFO logger.py setMSG [line:38 ] wait 0.015624761581420898 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:40,070 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:40,169 INFO logger.py setMSG [line:38 ] succeed to input 34 into the element: ('id', 'multiplicand')
+2021-09-23 22:52:40,190 INFO logger.py setMSG [line:38 ] wait 0.020040273666381836 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:40,222 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:40,290 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:40,337 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:40,353 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: 408
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_multiply_success_2: positive cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+        pass</a>
+
+    <div id='div_pt2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.2: 2021-09-23 22:52:40,498 INFO logger.py setMSG [line:38 ] wait 0.023531675338745117 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:40,522 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:40,641 INFO logger.py setMSG [line:38 ] succeed to input -12 into the element: ('id', 'multiplier')
+2021-09-23 22:52:40,673 INFO logger.py setMSG [line:38 ] wait 0.01562643051147461 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:40,709 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:40,860 INFO logger.py setMSG [line:38 ] succeed to input 1234567834 into the element: ('id', 'multiplicand')
+2021-09-23 22:52:40,875 INFO logger.py setMSG [line:38 ] wait 0.015625 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:40,907 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:40,965 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:40,975 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:40,991 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: -14814814008
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.3' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_multiply_success_3: positive cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.3')" >
+        pass</a>
+
+    <div id='div_pt2.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.3: 2021-09-23 22:52:41,098 INFO logger.py setMSG [line:38 ] wait 0.028073549270629883 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:41,114 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:41,245 INFO logger.py setMSG [line:38 ] succeed to input -1234556789 into the element: ('id', 'multiplier')
+2021-09-23 22:52:41,278 INFO logger.py setMSG [line:38 ] wait 0.02085089683532715 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:41,293 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:41,394 INFO logger.py setMSG [line:38 ] succeed to input -11 into the element: ('id', 'multiplicand')
+2021-09-23 22:52:41,410 INFO logger.py setMSG [line:38 ] wait 0.014819145202636719 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:41,441 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:41,492 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:41,517 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:41,533 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: 13580124679
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.4' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_multiply_success_4: positive cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.4')" >
+        pass</a>
+
+    <div id='div_pt2.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.4: 2021-09-23 22:52:41,633 INFO logger.py setMSG [line:38 ] wait 0.03337812423706055 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:41,662 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:41,758 INFO logger.py setMSG [line:38 ] succeed to input 1 23 into the element: ('id', 'multiplier')
+2021-09-23 22:52:41,801 INFO logger.py setMSG [line:38 ] wait 0.03515315055847168 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:41,810 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:41,909 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'multiplicand')
+2021-09-23 22:52:41,941 INFO logger.py setMSG [line:38 ] wait 0.015624761581420898 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:41,956 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:42,019 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:42,034 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:42,050 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: 123
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.5' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_multiply_success_5: positive cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.5')" >
+        pass</a>
+
+    <div id='div_pt2.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.5: 2021-09-23 22:52:42,197 INFO logger.py setMSG [line:38 ] wait 0.02169060707092285 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:42,213 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:42,345 INFO logger.py setMSG [line:38 ] succeed to input  123  into the element: ('id', 'multiplier')
+2021-09-23 22:52:42,376 INFO logger.py setMSG [line:38 ] wait 0.031248807907104492 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:42,392 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:42,506 INFO logger.py setMSG [line:38 ] succeed to input  1qq  into the element: ('id', 'multiplicand')
+2021-09-23 22:52:42,541 INFO logger.py setMSG [line:38 ] wait 0.019848108291625977 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:42,566 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:42,629 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:42,644 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:42,668 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: 123
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.6' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_multiply_success_6: positive cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.6')" >
+        pass</a>
+
+    <div id='div_pt2.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.6: 2021-09-23 22:52:42,766 INFO logger.py setMSG [line:38 ] wait 0.03007817268371582 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:42,795 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:42,910 INFO logger.py setMSG [line:38 ] succeed to input        1.23 into the element: ('id', 'multiplier')
+2021-09-23 22:52:42,941 INFO logger.py setMSG [line:38 ] wait 0.015604496002197266 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:42,957 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:43,061 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'multiplicand')
+2021-09-23 22:52:43,078 INFO logger.py setMSG [line:38 ] wait 0.017725467681884766 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:43,110 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:43,176 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:43,197 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:43,212 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: 123
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.7' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_multiply_success_7: positive cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.7')" >
+        pass</a>
+
+    <div id='div_pt2.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.7: 2021-09-23 22:52:43,317 INFO logger.py setMSG [line:38 ] wait 0.024063825607299805 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:43,332 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:43,444 INFO logger.py setMSG [line:38 ] succeed to input 1.23 into the element: ('id', 'multiplier')
+2021-09-23 22:52:43,475 INFO logger.py setMSG [line:38 ] wait 0.03125166893005371 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:43,507 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:43,627 INFO logger.py setMSG [line:38 ] succeed to input 12.3 into the element: ('id', 'multiplicand')
+2021-09-23 22:52:43,643 INFO logger.py setMSG [line:38 ] wait 0.015625 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:43,659 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:43,728 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:43,743 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:43,745 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: 12
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.8' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_001_multiply_success_8: positive cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.8')" >
+        pass</a>
+
+    <div id='div_pt2.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.8: 2021-09-23 22:52:43,866 INFO logger.py setMSG [line:38 ] wait 0.024842262268066406 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:43,882 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:43,994 INFO logger.py setMSG [line:38 ] succeed to input -1qq into the element: ('id', 'multiplier')
+2021-09-23 22:52:44,025 INFO logger.py setMSG [line:38 ] wait 0.01562786102294922 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:44,041 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:44,138 INFO logger.py setMSG [line:38 ] succeed to input -12q3 into the element: ('id', 'multiplicand')
+2021-09-23 22:52:44,161 INFO logger.py setMSG [line:38 ] wait 0.021462678909301758 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:44,176 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:44,239 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:44,254 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:44,270 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: 12
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.9' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_002_multiply_wrong_1: negative cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.9')" >
+        pass</a>
+
+    <div id='div_pt2.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.9: 2021-09-23 22:52:44,424 INFO logger.py setMSG [line:38 ] wait 0.02107691764831543 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:44,428 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:44,545 INFO logger.py setMSG [line:38 ] succeed to input Keys.SPACE into the element: ('id', 'multiplier')
+2021-09-23 22:52:44,577 INFO logger.py setMSG [line:38 ] wait 0.015627384185791016 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:44,592 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:44,693 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'multiplicand')
+2021-09-23 22:52:44,724 INFO logger.py setMSG [line:38 ] wait 0.021756410598754883 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:44,741 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:44,798 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:44,816 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:44,830 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: NaN
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.10' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_002_multiply_wrong_2: negative cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.10')" >
+        pass</a>
+
+    <div id='div_pt2.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.10: 2021-09-23 22:52:44,969 INFO logger.py setMSG [line:38 ] wait 0.03334951400756836 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:44,984 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:45,128 INFO logger.py setMSG [line:38 ] succeed to input 123 into the element: ('id', 'multiplier')
+2021-09-23 22:52:45,155 INFO logger.py setMSG [line:38 ] wait 0.019015073776245117 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:45,169 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:45,247 INFO logger.py setMSG [line:38 ] succeed to input Keys.TAB into the element: ('id', 'multiplicand')
+2021-09-23 22:52:45,278 INFO logger.py setMSG [line:38 ] wait 0.031248092651367188 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:45,294 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:45,372 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:45,387 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:45,403 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: NaN
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.11' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_002_multiply_wrong_3: negative cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.11')" >
+        pass</a>
+
+    <div id='div_pt2.11' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.11').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.11: 2021-09-23 22:52:45,535 INFO logger.py setMSG [line:38 ] wait 0.035092830657958984 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:45,548 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:45,646 INFO logger.py setMSG [line:38 ] succeed to input 123! into the element: ('id', 'multiplier')
+2021-09-23 22:52:45,678 INFO logger.py setMSG [line:38 ] wait 0.03125166893005371 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:45,693 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:45,814 INFO logger.py setMSG [line:38 ] succeed to input *123 into the element: ('id', 'multiplicand')
+2021-09-23 22:52:45,830 INFO logger.py setMSG [line:38 ] wait 0.015624761581420898 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:45,860 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:45,921 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:45,939 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:45,948 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: NaN
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.12' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_002_multiply_wrong_4: negative cases of multiply</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.12')" >
+        pass</a>
+
+    <div id='div_pt2.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.12: 2021-09-23 22:52:46,213 INFO logger.py setMSG [line:38 ] wait 0.03233051300048828 until the element ('id', 'multiplier') is visible
+2021-09-23 22:52:46,215 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplier')
+2021-09-23 22:52:46,418 INFO logger.py setMSG [line:38 ] succeed to input qa1 into the element: ('id', 'multiplier')
+2021-09-23 22:52:46,463 INFO logger.py setMSG [line:38 ] wait 0.029840707778930664 until the element ('id', 'multiplicand') is visible
+2021-09-23 22:52:46,498 INFO logger.py setMSG [line:38 ] succeed to find the element: input the first number in the third page of ('id', 'multiplicand')
+2021-09-23 22:52:46,613 INFO logger.py setMSG [line:38 ] succeed to input qa2 into the element: ('id', 'multiplicand')
+2021-09-23 22:52:46,633 INFO logger.py setMSG [line:38 ] wait 0.0187227725982666 until the element ('id', 'multiplicationButton') is visible
+2021-09-23 22:52:46,648 INFO logger.py setMSG [line:38 ] succeed to find the element: click multiply button of ('id', 'multiplicationButton')
+2021-09-23 22:52:46,715 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'multiplicationButton')
+2021-09-23 22:52:46,731 INFO logger.py setMSG [line:38 ] succeed to find the element: get result of Multiply of ('id', 'product')
+2021-09-23 22:52:46,747 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'product')'s attr value: NaN
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.13' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_003_pop_up_message: check pop up message</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.13')" >
+        pass</a>
+
+    <div id='div_pt2.13' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.13').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.13: 2021-09-23 22:52:46,886 INFO logger.py setMSG [line:38 ] wait 0.028843164443969727 until the element ('id', 'popupButton') is visible
+2021-09-23 22:52:46,901 INFO logger.py setMSG [line:38 ] succeed to find the element: click pop-up window of ('id', 'popupButton')
+2021-09-23 22:52:46,979 INFO logger.py setMSG [line:38 ] succeed to click the element: ('id', 'popupButton')
+2021-09-23 22:52:46,997 INFO logger.py setMSG [line:38 ] succeed to switch to alert
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.14' class='hiddenRow'>
+    <td class='none'><div class='Testcase'>test_004_link_success: check the first page link</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.14')" >
+        pass</a>
+
+    <div id='div_pt2.14' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.14').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.14: 2021-09-23 22:52:47,154 INFO logger.py setMSG [line:38 ] wait 0.034774065017700195 until the element ('link text', 'Go back to starting page.') is visible
+2021-09-23 22:52:47,185 INFO logger.py setMSG [line:38 ] succeed to find the element: first page link loc of ('link text', 'Go back to starting page.')
+2021-09-23 22:52:47,693 INFO logger.py setMSG [line:38 ] succeed to click the element: ('link text', 'Go back to starting page.')
+2021-09-23 22:52:47,740 INFO logger.py setMSG [line:38 ] wait 0.031249284744262695 until the element ('id', 'loggedInUser') is visible
+2021-09-23 22:52:47,755 INFO logger.py setMSG [line:38 ] succeed to find the element: check the page message of ('id', 'loggedInUser')
+2021-09-23 22:52:47,787 INFO logger.py setMSG [line:38 ] succeed to get element ('id', 'loggedInUser')'s text: guest
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+        
+    </td>
+    <td></td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>28</td>
+    <td>28</td>
+    <td>0</td>
+    <td>0</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>

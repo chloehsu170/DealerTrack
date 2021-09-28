@@ -31,7 +31,6 @@ class ThirdPage(BasePage):
         '''
         description: get result of Multiply
         '''
-        self.wait_eleVisible(loc.result_of_multiply_loc)
         return self.get_element_attr_value("get result of Multiply", loc.result_of_multiply_loc)
     
     def click_first_page_link(self):
@@ -46,13 +45,8 @@ class ThirdPage(BasePage):
         '''
         self.click("click pop-up window", loc.pop_up_window_button_loc)
         #accept the alert info
-        try:
-            alert = self.driver.switch_to_alert()
-            message = alert.text
-            alert.accept()
-            return message
-        except:
-            pass
+        return self.switch_alert(10)
+
         
     def check_user_ele_exists(self):
         '''
@@ -61,13 +55,8 @@ class ThirdPage(BasePage):
         # import time
         # time.sleep(2)
         self.wait_eleVisible(loc.third_page_text_loc)
-        try:
-            self.driver.find_element(loc.third_page_text_loc)
-        except Exception as e:
-            return e
-        else:
-            return self.get_element_text("get_element_text", loc.third_page_text_loc)
-
+        return self.get_element_text("check the third page text", loc.third_page_text_loc)
+        
     def click_home_link(self):
         '''
         description: check the home link
