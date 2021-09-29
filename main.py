@@ -21,7 +21,6 @@ with open(htmlreport_dir+"\\autoTest_report.html", 'wb') as fp:
     )
     runner.run(ss)
 
-
 # ss=unittest.TestSuite()
 # loader=unittest.TestLoader()
 # ss.addTests(loader.discover(testcases_dir))
