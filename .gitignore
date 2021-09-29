@@ -136,3 +136,11 @@ common/__pycache__/HTMLTestRunner.cpython-36.pyc
 TestCases/__pycache__/test_first.cpython-36.pyc
 TestCases/__pycache__/test_second.cpython-36.pyc
 TestCases/__pycache__/test_third.cpython-36.pyc
+
+.bundle
+.DS_Store
+db/*.sqlite3
+log/*.log
+tmp/
+public/system/images/
+public/system/avatars/
