@@ -51,3 +51,5 @@ class TestSecond(unittest.TestCase):
         self.assertTrue(ThirdPage(self.driver).check_user_ele_exists())
     
 
+if __name__=="__main__":
+    unittest.main()
