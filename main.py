@@ -17,7 +17,7 @@ with open(htmlreport_dir + "\\autoTest_report.html", "wb") as fp:
     runner = HTMLTestRunner(
         stream=fp,
         title="Dealertarck's Test Report",
-        # verbosity=2,
+        verbosity=2,
         description="Auto UI Test Coding Session",
     )
     runner.run(ss)
