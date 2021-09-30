@@ -56,19 +56,22 @@ class TestFirst(unittest.TestCase):
             self.fp.get_errorMsg(), "Username is empty. Please enter user."
         )
 
-    # @ddt.data(*fpd.success_numbers)
-    # def test_004_addition_success(self, data):
-    #     """positive cases of addition"""
-    #     self.fp.addition(data["first_number"], data["second_number"])
-    #     self.assertEqual(self.fp.get_resultOfAddition(), str(data["check"]))
 
-    # @ddt.data(*fpd.wrong_numbers)
-    # def test_005_addition_wrong(self, data):
-    #     """negative cases of addition"""
-    #     self.fp.addition(data["first_number"], data["second_number"])
-    #     self.assertEqual(self.fp.get_resultOfAddition(), str(data["check"]))
+@ddt.data(*fpd.success_numbers)
+def test_004_addition_success(self, data):
+    """positive cases of addition"""
+    self.fp.addition(data["first_number"], data["second_number"])
+    self.assertEqual(self.fp.get_resultOfAddition(), str(data["check"]))
 
-    # def test_006_link_success(self):
-    #     """check the second page link"""
-    #     self.fp.click_second_page_link()
-    #     self.assertTrue(SecondPage(self.driver).check_user_ele_exists())
+
+@ddt.data(*fpd.wrong_numbers)
+def test_005_addition_wrong(self, data):
+    """negative cases of addition"""
+    self.fp.addition(data["first_number"], data["second_number"])
+    self.assertEqual(self.fp.get_resultOfAddition(), str(data["check"]))
+
+
+def test_006_link_success(self):
+    """check the second page link"""
+    self.fp.click_second_page_link()
+    self.assertTrue(SecondPage(self.driver).check_user_ele_exists())

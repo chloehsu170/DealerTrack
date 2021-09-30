@@ -49,3 +49,6 @@ class TestThird(unittest.TestCase):
         """check pop up message"""
         text = self.tp.click_pop_up_window()
         self.assertIn("This is a popup.", text)
+
+    def test_005_find_tracks(self):
+        self.tp.get_track_elements()
