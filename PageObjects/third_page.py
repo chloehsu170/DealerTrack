@@ -87,7 +87,3 @@ class ThirdPage(BasePage):
         description: check the help link
         """
         self.click("help link loc", loc.help_link_loc)
-
-    def get_track_elements(self):
-        track = self.get_element("get tracks", loc.track_loc)
-        self.input_text(11, "input the number in the track", loc.track_loc)
